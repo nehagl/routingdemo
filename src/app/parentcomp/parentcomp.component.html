@@ -1,0 +1,16 @@
+<p>parentcomp works!</p>
+<input
+type="text"
+[(ngModel)]="userName"
+placeholder="Enter user name here">
+
+<input
+type="text"
+[(ngModel)]="userPhone"
+placeholder="Enter user phone number here">
+
+<app-childcomp
+userNameFromParent="{{userName}}"
+userPhoneFromParent="{{userPhone}}"></app-childcomp>
+
+
